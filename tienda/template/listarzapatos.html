@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Zapatos</title>
+</head>
+<body>
+    <h1>LISTADO DE ZAPATOS</h1>
+    <ul>
+    {% for i in zapatos %}
+    
+        <li><strong>{{i}}</strong><br>color:{{i.color}} <br>precio: {{i.precio}} <br>{{i.imagen}} <br>descripcion: {{i.descripcion}}</li>
+        <a href="">ver</a>
+
+    {% endfor %}
+    </ul>
+    
+</body>
+</html>

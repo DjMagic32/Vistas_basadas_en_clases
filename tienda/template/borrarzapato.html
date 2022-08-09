@@ -1,0 +1,9 @@
+<form method="post">{% csrf_token %}
+    <p>Estas seguro de Borrar el zapato {{zapato}}</p>
+    <input type="submit" name="delete" value="Borrar">
+
+</form>
+
+<a href="{{ listarzapatos }}">
+    <button>no borrar</button>
+</a>
